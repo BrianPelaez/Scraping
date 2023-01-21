@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 import leaderboard from "../db/leaderboard.json";
-import {serveStatic} from 'hono/serve-static'
+import {serveStatic} from 'hono/serve-static.module'
 const app = new Hono()
 
 app.get('/', (ctx) => {

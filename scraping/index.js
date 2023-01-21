@@ -43,7 +43,10 @@ const getLeaderBoard = async () => {
     text.replace(/\t|\n|\s:/g, "").replace(/.*:/g, "");
 
   let leaderboard = [];
+
+  //Iteramos las filas para extraer la información necesaria
   $rows.each((index, el) => {
+    
     const leaderBoardEntries = Object.entries(LEADERBOARD_SELECTORS).map(
       ([key, { selector, typeOf }]) => {
         const rawValue = $(el).find(selector).text();
@@ -54,6 +57,7 @@ const getLeaderBoard = async () => {
       }
     );
 
+    console.log(Object.fromEntries(leaderBoardEntries))
     const { team: teamName, ...leaderboardForTeam } =
       Object.fromEntries(leaderBoardEntries);
     const team = getTeamFrom({ name: teamName });
