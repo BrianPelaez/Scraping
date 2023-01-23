@@ -15,6 +15,4 @@ Endpoints disponibles:
 
 ## Web
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=BrianPelaez&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
-
 <p><img align="left" src="https://jordinodejs.vercel.app/api/top-langs?username=BrianPelaez&show_icons=true&locale=es&layout=compact&theme=calm&langs_count=8&hide=php" alt="BrianPelaez" /></p>
