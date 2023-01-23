@@ -4,9 +4,11 @@ import path from 'node:path'
 const STATICS_PATH = path.join(process.cwd(), './assets/static/presidents')
 const DB_PATH = path.join(process.cwd(), "./db/");
 const RAW_PRESIDENTS = await readFile(
-  `${DB_PATH}/raw-presidents.json`,
+  `${DB_PATH}/presidents.json`,
   "utf-8"
 ).then(JSON.parse);
+
+console.log(RAW_PRESIDENTS)
 
 const presidents = await Promise.all(
      RAW_PRESIDENTS.map(async (presidentInfo) => {
